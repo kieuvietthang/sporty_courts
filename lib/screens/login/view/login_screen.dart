@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:sporty_courts/constants/assets.dart';
 import 'package:sporty_courts/constants/colors.dart';
 import 'package:sporty_courts/constants/strings.dart';
+import 'package:sporty_courts/constants/text_style.dart';
 import 'package:sporty_courts/constants/values.dart';
 import 'package:sporty_courts/screens/login/controller/login_controller.dart';
 
@@ -22,7 +23,9 @@ class LoginScreen extends GetView<LoginController> {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
+                  width: double.infinity,
                   height: AppValue.height(context) * 0.57,
+                  padding: EdgeInsets.only(top: 40),
                   decoration: const BoxDecoration(
                       color: AppColors.white,
                       borderRadius: BorderRadius.only(
@@ -31,7 +34,7 @@ class LoginScreen extends GetView<LoginController> {
                       )),
                   child: Column(
                     children: [
-                      Text(DefaultString.sportyCourts)
+                      Text(DefaultString.sportyCourts,style: TextStyleApp.textSize24W800White,)
                     ],
                   ),
                 ),

@@ -191,4 +191,11 @@ class TextStyleApp {
     fontSize: 36,
     color: AppColors.white,
   );
+
+  static TextStyle textSize24W800White = TextStyle(
+    fontFamily: FontFamily.manrope,
+    fontWeight: FontWeight.w800,
+    fontSize: 24,
+    color: AppColors.veryDarkCyan,
+  );
 }
