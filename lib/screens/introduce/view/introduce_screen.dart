@@ -9,6 +9,7 @@ import 'package:sporty_courts/constants/text_style.dart';
 import 'package:sporty_courts/constants/values.dart';
 import 'package:sporty_courts/screens/introduce/controller/login_controller.dart';
 import 'package:sporty_courts/screens/login/view/login_screen.dart';
+import 'package:sporty_courts/screens/register/view/register_screen.dart';
 
 class IntroduceScreen extends GetView<IntroduceController> {
   @override
@@ -51,14 +52,16 @@ class IntroduceScreen extends GetView<IntroduceController> {
                         TextStyleApp.textSize16W600White,
                         AppColors.veryDarkCyan,
                         () {
-                          Get.to(LoginScreen());
+                          Get.to(()=>LoginScreen());
                         }),
                     _btn(
                         context,
                         DefaultString.txtRegister,
                         TextStyleApp.textSize16W600darkCyan,
                         AppColors.white,
-                        () {}),
+                        () {  Get.to(()=>RegisterScreen());
+
+                        }),
                   ],
                 ))
           ],

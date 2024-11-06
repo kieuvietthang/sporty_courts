@@ -62,6 +62,12 @@ class TextStyleApp {
     fontSize: 12,
     color: AppColors.white,
   );
+  static TextStyle textSize12W600DarkCyan = TextStyle(
+    fontFamily: FontFamily.manrope,
+    fontWeight: FontWeight.w600,
+    fontSize: 12,
+    color: AppColors.darkCyan,
+  );
   static TextStyle textSize14W400Black = TextStyle(
     fontFamily: FontFamily.manrope,
     fontWeight: FontWeight.w400,
@@ -82,6 +88,19 @@ class TextStyleApp {
     fontSize: 14,
     color: AppColors.white,
   );
+  static TextStyle textSize14W600DarkCyan = TextStyle(
+    fontFamily: FontFamily.manrope,
+    fontWeight: FontWeight.w600,
+    fontSize: 14,
+    color: AppColors.darkCyan,
+  );
+  static TextStyle textSize14W600DarkGray = TextStyle(
+    fontFamily: FontFamily.manrope,
+    fontWeight: FontWeight.w600,
+    fontSize: 14,
+    color: AppColors.darkGray,
+  );
+
   static TextStyle textSize14W700White = TextStyle(
     fontFamily: FontFamily.manrope,
     fontWeight: FontWeight.w700,
@@ -164,6 +183,13 @@ class TextStyleApp {
     color: AppColors.blue1,
   );
 
+  static TextStyle textSize16W700Black = TextStyle(
+    fontFamily: FontFamily.manrope,
+    fontWeight: FontWeight.w600,
+    fontSize: 16,
+    color: AppColors.black,
+  );
+
   static TextStyle textSize20W600White = TextStyle(
     fontFamily: FontFamily.manrope,
     fontWeight: FontWeight.w600,
@@ -192,7 +218,7 @@ class TextStyleApp {
     color: AppColors.white,
   );
 
-  static TextStyle textSize24W800White = TextStyle(
+  static TextStyle textSize24W800VeryDarkCyan = TextStyle(
     fontFamily: FontFamily.manrope,
     fontWeight: FontWeight.w800,
     fontSize: 24,

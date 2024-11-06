@@ -6,7 +6,7 @@ class SplashController extends GetxController {
   void onInit() async {
     super.onInit();
     Future.delayed(const Duration(milliseconds: 3000),()async{
-      await Get.to(IntroduceScreen());
+      await Get.to(()=>IntroduceScreen());
     });
 
   }
