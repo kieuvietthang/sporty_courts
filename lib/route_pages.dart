@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
 import 'package:sporty_courts/screens/forgot_passwork/view/forgot_passwork_screen.dart';
 import 'package:sporty_courts/screens/forgot_passwork/view/otp_screen.dart';
+import 'package:sporty_courts/screens/home/view/home_screen.dart';
 import 'package:sporty_courts/screens/introduce/view/introduce_screen.dart';
 import 'package:sporty_courts/screens/login/view/login_screen.dart';
 import 'package:sporty_courts/screens/register/view/register_screen.dart';
@@ -14,5 +15,6 @@ class RoutePageApp {
     GetPage(name: '/register', page: () => RegisterScreen()),
     GetPage(name: '/forgotPasswork', page: () => ForgotPassworkScreen()),
     GetPage(name: '/otp', page: () => OTPScreen()),
+    GetPage(name: '/home', page: () => HomeScreen()),
   ];
 }

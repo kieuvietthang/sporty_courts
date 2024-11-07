@@ -35,6 +35,7 @@ class FormContact extends StatelessWidget {
       margin: EdgeInsets.fromLTRB(AppValue.width(context) * (40 / 375), 20,
           AppValue.width(context) * (40 / 375), 0),
       child: TextFormField(
+        controller: controller,
         decoration: InputDecoration(
           labelText: labelText,
           labelStyle: const TextStyle(color: AppColors.gray),

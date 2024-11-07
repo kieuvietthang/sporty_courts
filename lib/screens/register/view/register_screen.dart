@@ -7,7 +7,6 @@ import 'package:sporty_courts/constants/colors.dart';
 import 'package:sporty_courts/constants/strings.dart';
 import 'package:sporty_courts/constants/text_style.dart';
 import 'package:sporty_courts/constants/values.dart';
-import 'package:sporty_courts/screens/login/view/login_screen.dart';
 import 'package:sporty_courts/screens/register/controller/register_controller.dart';
 import 'package:sporty_courts/widgets/form_contact.dart';
 
@@ -42,31 +41,36 @@ class RegisterScreen extends GetView<RegisterController> {
                           style: TextStyleApp.textSize24W800VeryDarkCyan,
                         ),
                         FormContact(
-                          controller: null,
+                          controller: controller.nameController,
                           labelText: DefaultString.txtLoginName,
                         ),
                         FormContact(
-                          controller: null,
+                          controller: controller.phoneController,
                           labelText: DefaultString.txtPhone,
                         ),
                         FormContact(
-                          controller: null,
+                          controller: controller.emailController,
                           labelText: DefaultString.txtEmail,
                         ),
                         FormContact(
-                          controller: null,
+                          controller: controller.passWorkController,
                           labelText: DefaultString.txtPassWork,
                         ),
                         FormContact(
-                          controller: null,
+                          controller: controller.forgotPassWorkController,
                           labelText: DefaultString.txtEnterPassword,
                         ),
                         _btn(
                             context,
                             DefaultString.txtRegister,
                             TextStyleApp.textSize16W600White,
-                            AppColors.darkCyan,
-                                () {}),
+                            AppColors.darkCyan, () {
+                          controller.registerAccount(
+                            controller.nameController.text.toString(),
+                            controller.emailController.text.toString(),
+                            controller.passWorkController.text.toString(),
+                          );
+                        }),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
@@ -75,7 +79,7 @@ class RegisterScreen extends GetView<RegisterController> {
                               style: TextStyleApp.textSize14W600DarkGray,
                             ),
                             GestureDetector(
-                              onTap: (){
+                              onTap: () {
                                 Get.back();
                               },
                               child: Text(
